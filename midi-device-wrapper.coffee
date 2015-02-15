@@ -9,7 +9,7 @@ module.exports = class Device extends EventEmitter
     for i in [0...@input.getPortCount()]
       name = @input.getPortName i
       debug "found device [#{i}] \"#{name}\""
-      if new RegExp(device_name).test name
+      if new RegExp(device_name, 'i').test name
         debug "openPort #{i}"
         @input.openPort i
         break
