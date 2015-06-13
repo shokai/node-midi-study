@@ -12,7 +12,7 @@
     "coffee-script": "^1.9.0",
     "debug": "^2.1.1",
     "korg-nano": "^1.0.0",
-    "korg-nano-kontrol": "^0.1.0",
+    "korg-nano-kontrol": "^0.2.0",
     "midi": "^0.9.1"
   },
   "devDependencies": {
