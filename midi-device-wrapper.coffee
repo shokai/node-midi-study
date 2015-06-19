@@ -16,6 +16,7 @@ module.exports = class Device extends EventEmitter
 
     ## midi messageを受信
     @input.on 'message', (delta, raw) =>
+      debug {delta: delta, raw: raw}
       @emit 'message', {delta: delta, raw: raw}
 
 
